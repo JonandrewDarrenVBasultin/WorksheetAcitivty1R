@@ -44,5 +44,69 @@ x [c("first", "third")]
 #first third
   #3     #2
 
-#5
-#
+#5 
+#5.A
+#The output is the same because I replaced the second element 0 with 0
+#x [2] <- 0
+#x
+# first second  third 
+#3      0      9 
+
+#6
+#a.
+df <- data.frame(Month = c("Jan", "Feb", "Mar", "Apr", "May", "June"),
+                 price_per_liter_Php = c(52.50, 57.25, 60.00, 65.00, 74.75, 54.00),
+                 purchase_quantity_L = c(25, 30, 40, 50, 10, 45)
+                 )
+#6b
+
+ave_fuel_exp <- weighted.mean(df$price_per_liter_Php,df$purchase_quantity_L)
+ave_fuel_exp
+# [1] 59.2875
+
+#7
+#7.ABC
+data <- c(length(rivers),sum(rivers), mean (rivers), median(rivers), var(rivers),
+          sd(rivers), min(rivers), max(rivers))
+data
+  
+#[1]    141.0000  83357.0000    591.1844    425.0000 243908.4086
+#[6]    493.8708    135.0000   3710.0000
+
+
+#8
+TopCelebrity <- data.frame (
+  PowerRanking = 1:25,
+  CelebrityName = c("Tom Cruise" , "Rolling Stones", "Oprah Winfrey", "U2","Tiger Woods", "Steven Spielberg", "Howard Stern", "50 Cent", "Cast of the Sopranos", "Dan Brown", "Bruce Springsteen", "Donald Trump", "Muhammad Ali", "Paul McCartney", "George Lucas", "Elton John", "David Letterman", "Phil Mickelson", "J.K Rowling", "Bradd Pitt", "Peter Jackson", "Dr. Phil McGraw", "Jay Lenon", "Celine Dion", "Kobe Bryant"),
+  Pay = c(67, 90, 225, 110, 90, 332, 302, 41, 52, 88, 55, 44, 55, 40, 233, 34, 40, 47, 75, 25, 39, 45, 32, 40, 31)
+)
+TopCelebrity
+
+#PowerRanking        CelebrityName Pay
+#1             1           Tom Cruise  67
+#3             3        Oprah Winfrey 225
+#4             4                   U2 110
+#5             5          Tiger Woods  90
+#6             6     Steven Spielberg 332
+#7             7         Howard Stern 302
+#8             8              50 Cent  41
+#9             9 Cast of the Sopranos  52
+#10           10            Dan Brown  88
+#11           11    Bruce Springsteen  55
+#12           12         Donald Trump  44
+#13           13         Muhammad Ali  55
+#14           14       Paul McCartney  40
+#15           15         George Lucas 233
+#16           16           Elton John  34
+#17           17      David Letterman  40
+#18           18       Phil Mickelson  47
+#19           19          J.K Rowling  75
+#20           20           Bradd Pitt  25
+#21           21        Peter Jackson  39
+#22           22      Dr. Phil McGraw  45
+#23           23            Jay Lenon  32
+#24           24          Celine Dion  40
+#25           25          Kobe Bryant  31
+
+#8.B
+
